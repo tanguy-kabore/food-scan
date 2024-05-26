@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Agreement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body onload="sendMessageToFlutter()"> <!-- Appel automatique de sendMessageToFlutter() -->
+    <h1>License Agreement</h1>
+
+    <h2>Context and Project Definition</h2>
+    <p>In a context where awareness of the importance of health is constantly growing, the need for consumers to easily
+        access reliable and understandable information about the products they consume has become paramount. This
+        project aims to meet this requirement by developing a digital solution that allows scanning of food product
+        labels, thus offering an instant analysis of their composition. This project aims to make product information
+        transparent and accessible to all, contributing to improving quality of life.</p>
+
+    <h2>Project Objective</h2>
+    <p>The main objective of this project is to develop a mobile application that facilitates access to detailed and
+        reliable information on the composition of food products, in order to improve consumers' decision-making
+        regarding their health. To achieve this overall objective, the project focuses on three specific objectives:</p>
+    <ul>
+        <li>Designing an accessible and intuitive user interface: The objective is to enable a smooth and pleasant user
+            experience, thereby reducing the learning curve and increasing user engagement.</li>
+        <li>Integrating a product search function: Developing a feature that allows users to instantly access detailed
+            information about a given product.</li>
+        <li>Providing ingredient analysis: Offering users clear and accurate information about ingredients. The goal is
+            to help consumers understand the impact of their dietary choices on their health and make informed decisions
+            about their diet.</li>
+    </ul>
+
+    <h2>Project Scope</h2>
+    <p>The scope of this project includes the development of a mobile application dedicated to promoting healthy and
+        informed eating for consumers.</p>
+
+    <h2>Functional Description of Requirements</h2>
+    <h3>Main Features</h3>
+    <ul>
+        <li><strong>Accessible and Intuitive User Interface:</strong> Creation of a user interface (UI) that is easy to
+            navigate. The UI should be designed to be aesthetically pleasing and functional on various mobile devices.
+        </li>
+        <li><strong>Product Search:</strong> Offering a search function that allows users to find products by name,
+            category, or brand. The search can be performed through barcode scanning for offline usage.</li>
+        <li><strong>Ingredient Analysis:</strong> Providing detailed and reliable information on the composition of food
+            products, including nutritional values, ingredients, and allergens.</li>
+        <li><strong>Share Results:</strong> Allowing users to share the analysis results with their contacts and social
+            networks.</li>
+        <li><strong>Offline Product History:</strong> Storing a history of previously viewed products for offline
+            access, enabling users to access product information even without an internet connection.</li>
+    </ul>
+    <h3>Secondary Features</h3>
+    <ul>
+        <li><strong>User Profile Creation:</strong> Allowing users to create profiles, including registration, login,
+            and account management.</li>
+    </ul>
+
+    <h2>Permissions Required</h2>
+    <p>The following permissions are required for the proper functioning of the application:</p>
+    <ul>
+        <li>Internet Access</li>
+        <li>Read External Storage</li>
+        <li>Write External Storage</li>
+        <li>Access Fine Location</li>
+        <li>Access Coarse Location</li>
+    </ul>
+    <p>By installing and using the application, you agree to grant these permissions to enable its functionality.</p>
+
+    <script>
+        // Function to receive messages from Flutter
+        // function receiveMessageFromFlutter(message) {
+        //   document.getElementById('messageFromFlutter').innerText = message;
+        // }
+
+        // Function to send a message to Flutter
+        function sendMessageToFlutter() {
+            var message = "Hello from the web!";
+            messageHandler.postMessage(message);
+        }
+    </script>
+</body>
+
+</html>
