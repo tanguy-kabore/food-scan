@@ -117,13 +117,13 @@ Pour garantir la réussite de ce projet, nous avons défini les spécifications 
 
 ### 2.3. Diagramme de cas d'utilisation
 <p align="center">
-  <img src="readme_assets/diagrams/usecase.png" alt="Description de l'image" style="width:100%;">
+  <img src="readme_assets/diagrams/usecase.PNG" alt="Description de l'image" style="width:100%;">
 </p>
 <p align="center"><em>Image 2: Diagramme de cas d'utilisation</em></p>
 
 ### 2.4. Diagramme de classe
 <p align="center">
-  <img src="readme_assets/diagrams/class.png" alt="Description de l'image" style="width:100%;">
+  <img src="readme_assets/diagrams/class.PNG" alt="Description de l'image" style="width:100%;">
 </p>
 <p align="center"><em>Image 3: Diagramme de classe</em></p>
 
