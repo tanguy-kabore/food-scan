@@ -5,7 +5,7 @@
 ### 1.1. Contexte et définition du projet
 
 <p align="justify">
-Dans un contexte où la prise de conscience autour de l'importance de la santé ne cesse de croître, la nécessité pour les consommateurs d'accéder facilement à des informations fiables et compréhensibles sur les produits qu'ils consomment est devenue primordiale. Ce projet vise à répondre à cette exigence en développant une solution numérique qui permet de scanner les étiquettes des produits alimentaires, offrant ainsi une analyse instantanée de leur composition grâce à une intelligence artificielle. Ce projet a pour ambition de rendre l'information sur les produits transparente et accessible à tous, contribuant à améliorer la qualité de vie.
+Dans un contexte où la prise de conscience autour de l'importance de la santé ne cesse de croître, la nécessité pour les consommateurs d'accéder facilement à des informations fiables et compréhensibles sur les produits qu'ils consomment est devenue primordiale. Ce projet vise à répondre à cette exigence en développant une solution numérique permettant de scanner les étiquettes des produits alimentaires, offrant ainsi une analyse instantanée de leur composition grâce à une intelligence artificielle. Ce projet a pour ambition de rendre l'information sur les produits transparente et accessible à tous, contribuant ainsi à améliorer la qualité de vie.
 </p>
 
 ### 1.2. Objectif du projet
@@ -38,7 +38,7 @@ Le périmètre de ce projet englobe le développement d'une application mobile d
 ### 1.4. Identité visuelle
 
 <p align="center">
-  <img src="readme_assets/logo/3.png" alt="Description de l'image" style="width:50%;">
+  <img src="readme_assets/logo/3.png" alt="Logo du projet" style="width:50%;">
 </p>
 <p align="center"><em>Image 1: Logo</em></p>
 
@@ -116,14 +116,24 @@ Pour garantir la réussite de ce projet, nous avons défini les spécifications 
   </p>
 
 ### 2.3. Diagramme de cas d'utilisation
+
+<p align="justify">
+L'acteur principal est l'utilisateur. Il peut créer un compte et se connecter. Ensuite, il peut scanner un produit puis, s'il le souhaite, analyser le produit ou le partager avec ses proches. Il peut également archiver le produit et le gérer hors ligne. Il peut aussi envoyer la localisation d'où il a scanné le produit. L'acteur secondaire est l'API d'Open Food Facts pour l'authentification et la recherche de produits, ainsi que l'API de Gemini pour l'analyse des produits.
+</p>
+
 <p align="center">
-  <img src="readme_assets/diagrams/usecase.PNG" alt="Description de l'image" style="width:100%;">
+  <img src="readme_assets/diagrams/usecase.PNG" alt="Diagramme de cas d'utilisation" style="width:100%;">
 </p>
 <p align="center"><em>Image 2: Diagramme de cas d'utilisation</em></p>
 
 ### 2.4. Diagramme de classe
+
+<p align="justify">
+On a deux classes principales : une classe utilisateur et une classe produit. La classe utilisateur étend la classe utilisateur de l'API Open Food Facts et la classe produit étend la classe produit de l'API Open Food Facts.
+</p>
+
 <p align="center">
-  <img src="readme_assets/diagrams/class.PNG" alt="Description de l'image" style="width:100%;">
+  <img src="readme_assets/diagrams/class.PNG" alt="Diagramme de classe" style="width:100%;">
 </p>
 <p align="center"><em>Image 3: Diagramme de classe</em></p>
 
@@ -131,8 +141,12 @@ Pour garantir la réussite de ce projet, nous avons défini les spécifications 
 
 #### Onboarding
 
+<p align="justify">
+Le point d'entrée est le splash screen, puis le processus d'onboarding en passant par l'acceptation du contrat de licence, la phase d'inscription et de connexion, puis enfin, après connexion, on arrive sur la page d'accueil.
+</p>
+
 <p align="center">
-  <img src="readme_assets/prototype/onboarding/1.jpg" alt="Screen 1" style="width:30% ; border: 1px solid black;">
+  <img src="readme_assets/prototype/onboarding/1.jpg" alt="Screen 1" style="width:30%; border: 1px solid black;">
   ➔
   <img src="readme_assets/prototype/onboarding/2.jpg" alt="Screen 2" style="width:30%; border: 1px solid black;">
   ➔
@@ -153,22 +167,30 @@ Pour garantir la réussite de ce projet, nous avons défini les spécifications 
 
 #### Scan et recherche
 
+<p align="justify">
+La recherche d'un produit se fait par le scan du code-barres du produit, puis on obtient les photos du produit, les informations basiques du produit, les informations nutritionnelles, les informations sur les additifs et les allergènes, et enfin les informations additionnelles.
+</p>
+
 <p align="center">
-  <img src="readme_assets/prototype/scan/10.jpg" alt="Screen 10" style="width:30% ; border: 1px solid black;">
+  <img src="readme_assets/prototype/scan/10.jpg" alt="Screen 10" style="width:30%; border: 1px solid black;">
   ➔
   <img src="readme_assets/prototype/scan/11.jpg" alt="Screen 11" style="width:30%; border: 1px solid black;">
   ➔
   <img src="readme_assets/prototype/scan/12.jpg" alt="Screen 12" style="width:30%; border: 1px solid black;">
   ➔
   <img src="readme_assets/prototype/scan/13.jpg" alt="Screen 13" style="width:30%; border: 1px solid black;">
-    ➔
+  ➔
   <img src="readme_assets/prototype/scan/14.jpg" alt="Screen 14" style="width:30%; border: 1px solid black;">
 </p>
 
 #### Analyse du produit
 
+<p align="justify">
+Il s'agit d'analyser le produit à l'aide de l'intelligence artificielle de Google nommée Gemini.
+</p>
+
 <p align="center">
-  <img src="readme_assets/prototype/analyse/11.jpg" alt="Screen 11" style="width:30% ; border: 1px solid black;">
+  <img src="readme_assets/prototype/analyse/11.jpg" alt="Screen 11" style="width:30%; border: 1px solid black;">
   ➔
   <img src="readme_assets/prototype/analyse/17.jpg" alt="Screen 17" style="width:30%; border: 1px solid black;">
   ➔
@@ -177,8 +199,12 @@ Pour garantir la réussite de ce projet, nous avons défini les spécifications 
 
 #### Partage du produit
 
+<p align="justify">
+Il s'agit de partager le produit sur les réseaux sociaux de son choix.
+</p>
+
 <p align="center">
-  <img src="readme_assets/prototype/share/11.jpg" alt="Screen 11" style="width:30% ; border: 1px solid black;">
+  <img src="readme_assets/prototype/share/11.jpg" alt="Screen 11" style="width:30%; border: 1px solid black;">
   ➔
   <img src="readme_assets/prototype/share/15.jpg" alt="Screen 15" style="width:30%; border: 1px solid black;">
   ➔
@@ -187,8 +213,12 @@ Pour garantir la réussite de ce projet, nous avons défini les spécifications 
 
 #### Historique des produits sauvegardés
 
+<p align="justify">
+Cet écran présente l'historique des produits sauvegardés.
+</p>
+
 <p align="center">
-  <img src="readme_assets/prototype/history/19.jpg" alt="Screen 19" style="width:30% ; border: 1px solid black;">
+  <img src="readme_assets/prototype/history/19.jpg" alt="Screen 19" style="width:30%; border: 1px solid black;">
   ➔
   <img src="readme_assets/prototype/history/20.jpg" alt="Screen 20" style="width:30%; border: 1px solid black;">
   ➔
@@ -197,8 +227,12 @@ Pour garantir la réussite de ce projet, nous avons défini les spécifications 
 
 #### Partage de la localisation d'où le produit a été scanné
 
+<p align="justify">
+Ces écrans permettent de gérer les produits sauvegardés, en les supprimant, en les partageant ou en envoyant la localisation d'où le produit a été scanné.
+</p>
+
 <p align="center">
-  <img src="readme_assets/prototype/location/23.jpg" alt="Screen 23" style="width:30% ; border: 1px solid black;">
+  <img src="readme_assets/prototype/location/23.jpg" alt="Screen 23" style="width:30%; border: 1px solid black;">
   ➔
   <img src="readme_assets/prototype/location/24.jpg" alt="Screen 24" style="width:30%; border: 1px solid black;">
   ➔
@@ -207,8 +241,12 @@ Pour garantir la réussite de ce projet, nous avons défini les spécifications 
 
 #### Les produits hors connexion
 
+<p align="justify">
+Cet écran permet de visualiser les produits lorsqu'on n'a pas de connexion internet à travers un mécanisme de cache pour les images et une base de données locale pour stocker les informations sur le produit.
+</p>
+
 <p align="center">
-  <img src="readme_assets/prototype/offline/23.jpg" alt="Screen 23" style="width:30% ; border: 1px solid black;">
+  <img src="readme_assets/prototype/offline/23.jpg" alt="Screen 23" style="width:30%; border: 1px solid black;">
   ➔
   <img src="readme_assets/prototype/offline/28.jpg" alt="Screen 28" style="width:30%; border: 1px solid black;">
 </p>
